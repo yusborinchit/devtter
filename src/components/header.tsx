@@ -9,17 +9,17 @@ export default async function Header() {
 	const { session } = sessionData;
 
 	return (
-		<header className="mx-auto flex max-w-[480px] items-center p-4">
+		<header className="mx-auto flex max-w-[480px] items-center px-4 py-3">
 			<a
 				href="/"
-				className="flex items-center gap-1 text-lg leading-[1]"
+				className="flex items-center gap-1 text-xl leading-[1]"
 			>
-				<span className="font-semibold text-sky-400">{"{"}</span>
+				<span className="font-black text-sky-400">{"{"}</span>
 				<span className="font-bold tracking-tighter">Devtter</span>
-				<span className="font-semibold text-sky-400">{"}"}</span>
+				<span className="font-black text-sky-400">{"}"}</span>
 			</a>
 
-			<nav className="ml-auto">
+			<nav className="ml-auto flex items-center">
 				{!session ? <SignInButton /> : <SingOutButton user={session.user} />}
 			</nav>
 		</header>

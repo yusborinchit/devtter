@@ -1,10 +1,10 @@
 import Header from "@/components/header";
 import "@/styles/globals.css";
 import { type Metadata } from "next";
-import { Lexend } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import { type ReactNode } from "react";
 
-const inter = Lexend({ subsets: ["latin"] });
+const plus_jakarta_sans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Devtter",
@@ -19,9 +19,9 @@ export default async function RootLayout({ children }: Readonly<RootLayoutProps>
 	return (
 		<html
 			lang="en"
-			className="scroll-smooth bg-neutral-950 font-light text-neutral-50 antialiased"
+			className="scroll-smooth bg-neutral-900 text-neutral-50 antialiased"
 		>
-			<body className={inter.className}>
+			<body className={plus_jakarta_sans.className}>
 				<Header />
 				{children}
 			</body>

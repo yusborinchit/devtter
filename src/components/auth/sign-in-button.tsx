@@ -19,7 +19,7 @@ export default function SignInButton() {
 	return (
 		<button
 			onClick={handleSignIn}
-			className="rounded bg-gradient-to-t from-sky-700 to-sky-400 px-3 py-2 text-xs font-semibold capitalize"
+			className="rounded bg-gradient-to-t from-sky-600 to-sky-400 px-3 py-2 text-sm font-semibold capitalize"
 		>
 			Sign in
 		</button>

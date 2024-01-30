@@ -28,8 +28,8 @@ export default function SingOutButton({ user }: Readonly<SignOutButtonProps>) {
 		>
 			<Image
 				src={user.user_metadata.avatar_url}
-				width={32}
-				height={32}
+				width={36}
+				height={36}
 				alt={`${user.user_metadata.user_name} profile picture.`}
 				className="rounded-full"
 			/>
