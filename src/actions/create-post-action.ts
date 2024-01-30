@@ -7,7 +7,10 @@ import { z } from "zod";
 const postFormSchema = z.object({
 	parentId: z.string().uuid().or(z.string()),
 	userId: z.string().uuid(),
-	post: z.string().min(1, "The post cannot be empty :("),
+	post: z
+		.string()
+		.min(1, "The post cannot be empty :(")
+		.max(256, "The post exceed the limit of chars!"),
 });
 
 export default async function createPostAction(_prevError: string, formData: FormData) {
