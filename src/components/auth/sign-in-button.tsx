@@ -1,6 +1,7 @@
 "use client";
 
 import { createSupabaseBrowserClient } from "@/lib/supabase-browser";
+import { LogIn } from "lucide-react";
 
 export default function SignInButton() {
 	const supabase = createSupabaseBrowserClient();
@@ -19,9 +20,14 @@ export default function SignInButton() {
 	return (
 		<button
 			onClick={handleSignIn}
-			className="rounded bg-gradient-to-t from-sky-600 to-sky-400 px-3 py-2 text-sm font-semibold capitalize"
+			className="flex items-center gap-1 rounded bg-gradient-to-t from-sky-600 to-sky-400 px-3 py-2 text-sm font-semibold capitalize"
 		>
-			Sign in
+			<LogIn
+				strokeWidth={2.5}
+				width={16}
+				height={16}
+			/>
+			<span>Sign in</span>
 		</button>
 	);
 }

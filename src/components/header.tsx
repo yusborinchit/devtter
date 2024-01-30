@@ -18,7 +18,6 @@ export default async function Header() {
 				<span className="font-bold tracking-tighter">Devtter</span>
 				<span className="font-black text-sky-400">{"}"}</span>
 			</a>
-
 			<nav className="ml-auto flex items-center">
 				{!session ? <SignInButton /> : <SingOutButton user={session.user} />}
 			</nav>

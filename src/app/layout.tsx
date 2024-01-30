@@ -19,7 +19,7 @@ export default async function RootLayout({ children }: Readonly<RootLayoutProps>
 	return (
 		<html
 			lang="en"
-			className="scroll-smooth bg-neutral-900 text-neutral-50 antialiased"
+			className="scroll-smooth bg-neutral-950 text-neutral-50 antialiased"
 		>
 			<body className={plus_jakarta_sans.className}>
 				<Header />
